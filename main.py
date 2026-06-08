@@ -27,7 +27,7 @@ def sell_tickets():
 
 
 
-    TOTAL_TICKETS = 20
+    TOTAL_TICKETS = 10
 
 
 

@@ -67,7 +67,7 @@ def sell_tickets():
 
 
 
-        tickets = int(input("How many tickets would you like to buy (1-4)? "))
+        tickets = int(input("Please enter the number of ticket you need (1-4)? "))
 
 
 

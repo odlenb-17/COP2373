@@ -43,7 +43,7 @@ def sell_tickets():
 
 
 
-    buyers = 0
+    buyer_count = 0
 
 
 
@@ -111,7 +111,7 @@ def sell_tickets():
 
 
 
-            buyers += 1
+            buyer_count += 1
 
 
 
@@ -135,7 +135,7 @@ def sell_tickets():
 
 
 
-    print("Total number of buyers:", buyers)
+    print("Total number of buyers:", buyer_count)
 
 
 

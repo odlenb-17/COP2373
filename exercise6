@@ -1,0 +1,68 @@
+Technical Design Document
+Name
+Odlen Boileau
+Date
+June 29, 2026
+Program Description
+This program uses Python regular expressions to validate a phone number, Social Security Number (SSN), and ZIP code entered by the user. The program reports whether each value is valid or invalid.
+Function: validate_phone
+Validates a phone number using a regular expression.
+Parameters
+phone (str): Phone number entered by the user.
+Variables
+pattern (str): Regular expression.
+phone (str): User input.
+Logic
+1.	Receive the phone number.
+2.	Compare it to the regular expression.
+3.	Determine whether it matches.
+4.	Return the result.
+Return
+bool: True if valid; otherwise False.
+Function: validate_ssn
+Validates a Social Security Number.
+Parameters
+ssn (str): SSN entered by the user.
+Variables
+pattern (str): Regular expression.
+ssn (str): User input.
+Logic
+5.	Receive the SSN.
+6.	Compare it to the regular expression.
+7.	Determine whether it matches.
+8.	Return the result.
+Return
+bool: True if valid; otherwise False.
+Function: validate_zip
+Validates a ZIP code.
+Parameters
+zip_code (str): ZIP code entered by the user.
+Variables
+pattern (str): Regular expression.
+zip_code (str): User input.
+Logic
+9.	Receive the ZIP code.
+10.	Compare it to the regular expression.
+11.	Determine whether it matches.
+12.	Return the result.
+Return
+bool: True if valid; otherwise False.
+Function: main
+Collects user input and displays validation results.
+Parameters
+None
+Variables
+phone (str)
+ssn (str)
+zip_code (str)
+Logic
+13.	Prompt the user for a phone number.
+14.	Prompt the user for an SSN.
+15.	Prompt the user for a ZIP code.
+16.	Call each validation function.
+17.	Display whether each value is valid or invalid.
+Return
+None
+Link to Repository
+https://github.com/odlenb-17/COP2373
+Output Screenshot

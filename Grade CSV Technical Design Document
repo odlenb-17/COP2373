@@ -1,0 +1,61 @@
+Technical Design Document: grades_csv_program
+Name: Odlen Boileau
+Date: July 4, 2026
+Program Description:
+This program allows an instructor to enter student information, including first name, last name, and three exam grades. The program stores the information in a CSV file named grades.csv. A second program reads the CSV file and displays the information in a neatly formatted table.
+________________________________________
+Function: create_grades_file
+Collects student information from the user and writes each student’s record to the grades.csv file.
+Parameters:
+None
+Variables:
+num_students (int): Number of students the instructor wants to enter.
+file (TextIO): File object used to write data to the CSV file.
+writer (csv.writer): CSV writer object used to write records.
+first_name (str): Student’s first name.
+last_name (str): Student’s last name.
+exam1 (int): Student’s first exam grade.
+exam2 (int): Student’s second exam grade.
+exam3 (int): Student’s third exam grade.
+Logic:
+1.	Ask the instructor for the number of students.
+2.	Open grades.csv in write mode.
+3.	Create a CSV writer object.
+4.	Write the header row.
+5.	Loop through each student.
+6.	Prompt for the student’s first name, last name, and three exam grades.
+7.	Write the student’s information to the CSV file.
+8.	Close the file automatically using the with statement.
+9.	Display a confirmation message.
+Return:
+None
+________________________________________
+Function: display_grades
+Reads the grades.csv file and displays each student’s information in a formatted table.
+Parameters:
+None
+Variables:
+file (TextIO): File object used to read the CSV file.
+reader (csv.reader): CSV reader object used to read each record.
+row (list): Stores one row of data from the CSV file.
+Logic:
+1.	Open grades.csv in read mode.
+2.	Create a CSV reader object.
+3.	Read each row from the file.
+4.	Display each row in a formatted table.
+5.	Close the file automatically using the with statement.
+Return:
+None
+________________________________________
+Link to your repository:
+COP2373/OdlenBoileau_ProgrammingExercise_7(1).py at main · odlenb-17/COP2373 · GitHub
+COP2373/OdlenBoileau_ProgrammingExercise_7(2).py at main · odlenb-17/COP2373 · GitHub
+
+Output Screenshot:
+
+•	Running create_grades.py
+•	Entering student information
+•	The confirmation message that grades.csv was created
+•	Running display_grades.py
+•	The table of student records displayed in the console
+
